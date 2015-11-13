@@ -1,4 +1,4 @@
-# Run Thinkaurelius TITAN with AWS DynamoDB or DynamoDB-local as storage backend
+# Dockers for TITAN Graph database with AWS DynamoDB or DynamoDB-local as storage backend
 This repository contains two docker images allowing you to get up and running with TITAN 0.54 - Distributed Graph Database - 
 with DynamoDB as a storage backend in no time with three different deployment methods:
 
