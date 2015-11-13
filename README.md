@@ -129,7 +129,7 @@ Before you try this, make sure you tried out the [all in one](#ALLINONE) which d
 
 <a name="DEPLOYMENT2"/>
 # DETAILS DEPLOYMENT 2
-Runs docker for Titan locally and use AWS DynamoDB in the cloud.
+Runs docker for Titan locally and uses AWS DynamoDB in the cloud.
 
 ## 1. PREPARE AWS
 
@@ -175,7 +175,7 @@ AWS_SECRET_ACCESS_KEY in the scripts below. In the docker command we replaced th
 
 <a name="DEPLOYMENT3"/>
 # DETAILS DEPLOYMENT 3
-Run docker for Titan on AWS EC2 Container Services (ECS) and use AWS DynamoDB in the cloud
+Runs docker for Titan on AWS EC2 Container Services (ECS) and uses AWS DynamoDB in the cloud
 
 ## 1. PREPARE AWS
 - To access AWS DynamoDB create a new user with the policy "AmazonDynamoDBFullAccess" via AWS IAM on Amazon AWS console. 
