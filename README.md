@@ -17,7 +17,7 @@ I recommend getting started with the included vagrant configuration which automa
 This will automatically start both dynamodb-local and titan-on-dynamodb dockers inside a local virtual machine resulting in a working 
 version of Deployment 1 which you can immediately start use without diving into any of the details explained below.
 
-A simple "vagrant up" followed by a "vagrant provision" in the root of this project does all the work for you resulting in an up and running deployment 1. 
+A simple "vagrant up" in the root of this project does all the work for you resulting in an up and running deployment 1. 
 You only need to make sure you do following parts in advance in order for vagrant part to work:
 
 - Install vagrant - https://www.vagrantup.com/downloads.html
@@ -26,7 +26,7 @@ You only need to make sure you do following parts in advance in order for vagran
 
 - Reboot your machine
 
-After having issued "vagrant up" followed by a "vagrant provision", and having waited for some time for the correct dockers to be downloaded and initialized,
+After having issued "vagrant up", and having waited for some time for the correct dockers to be downloaded and initialized,
 you should be able to access your new local empty Titan graph server:
 
 - (via browser) http://localhost:8182/graphs
