@@ -57,7 +57,7 @@ To do this you need to do the following:
 
 > - hostname: 127.0.0.1, port: 2222
 
-> - now click "open" which should log you into your local vagrant (username= vagrant)
+> - now click "open" which should log you into your local vagrant (username & password = 'vagrant')
  
 <a name="DEPLOYMENT1"/>
 # DETAILS DEPLOYMENT 1 
