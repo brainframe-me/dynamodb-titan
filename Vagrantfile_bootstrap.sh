@@ -33,6 +33,6 @@ echo "Starting brainframe/titan-on-dynamodb..."
 docker run -d --name titan-on-dynamodb --link dynamodb-local:dynamodb-local -p 8182:8182 -p 8183:8183 -p 8184:8184 -e DYNAMODB_HOSTPORT=http://dynamodb-local:8000 -e AWS_ACCESS_KEY_ID=notcheckedlocallybutmustbeprovided -e AWS_SECRET_ACCESS_KEY=notcheckedlocallybutmustbeprovided -e GRAPH_NAME=yourdatabasename brainframe/titan-on-dynamodb &
 
 # Background message
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 echo "The two docker images should now be loaded, try the following url in your browser: http://localhost:8182/graphs"
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
