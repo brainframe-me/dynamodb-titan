@@ -88,20 +88,20 @@ Before you try this, make sure you tried out the [all in one](#ALLINONE) which d
 
 - (in vagrant vm via ssh) "cd /local/docker/dynamodb-local" where the Dockerfile is located
 
-- (in vagrant vm via ssh) "docker build -t brainframe-me/dynamodb-local ."  which will rebuild the complete docker locally
+- (in vagrant vm via ssh) "docker build -t yourusername/dynamodb-local ."  which will rebuild the complete docker locally
 
 ### 1.2 titan-on-dynamodb
 
 - (in vagrant vm via ssh) "cd /local/docker/titan-on-dynamodb" where the Dockerfile is located
 
-- (in vagrant vm via ssh) "docker build -t brainframe-me/titan-on-dynamodb ."  which will rebuild the complete docker locally
+- (in vagrant vm via ssh) "docker build -t yourusername/titan-on-dynamodb ."  which will rebuild the complete docker locally
 
 
 ## 2. RUN DOCKER MANUALLY
 
 ### 2.1 dynamodb-local
 
-- (in vagrant vm via ssh) "docker run -t --name dynamodb-local -p 8000:8000 brainframe-me/dynamodb-local"
+- (in vagrant vm via ssh) "docker run -t --name dynamodb-local -p 8000:8000 brainframe/dynamodb-local"
 
 ### 2.2 titan-on-dynamodb
 
@@ -110,13 +110,13 @@ Before you try this, make sure you tried out the [all in one](#ALLINONE) which d
        -e AWS_ACCESS_KEY_ID=notcheckedlocallybutmustbeprovided 
        -e AWS_SECRET_ACCESS_KEY=notcheckedlocallybutmustbeprovided 
        -e GRAPH_NAME=yourdatabasename 
-       brainframe-me/titan-on-dynamodb"
+       brainframe/titan-on-dynamodb"
        
 ## 3. RUN DOCKER (with bash for debugging)
 
 ### 3.1 dynamodb-local
 
-- (in vagrant vm via ssh) "docker run -ti --entrypoint /bin/bash --name dynamodb-local -p 8000:8000 brainframe-me/dynamodb-local"
+- (in vagrant vm via ssh) "docker run -ti --entrypoint /bin/bash --name dynamodb-local -p 8000:8000 brainframe/dynamodb-local"
 
 ### 3.2 titan-on-dynamodb
 
@@ -125,7 +125,7 @@ Before you try this, make sure you tried out the [all in one](#ALLINONE) which d
        -e AWS_ACCESS_KEY_ID=notcheckedlocallybutmustbeprovided 
        -e AWS_SECRET_ACCESS_KEY=notcheckedlocallybutmustbeprovided 
        -e GRAPH_NAME=yourdatabasename 
-       brainframe-me/titan-on-dynamodb"
+       brainframe/titan-on-dynamodb"
 
 <a name="DEPLOYMENT2"/>
 # DETAILS DEPLOYMENT 2
@@ -154,7 +154,7 @@ AWS_SECRET_ACCESS_KEY in the scripts below. In the docker command we replaced th
        -e AWS_ACCESS_KEY_ID=XXX
        -e AWS_SECRET_ACCESS_KEY=YYY
        -e GRAPH_NAME=yourdatabasename
-       brainframe-me/titan-on-dynamodb"
+       brainframe/titan-on-dynamodb"
 
 ## 2. RUN DOCKER MANUALLY  (with bash for debugging)
 
@@ -171,7 +171,7 @@ AWS_SECRET_ACCESS_KEY in the scripts below. In the docker command we replaced th
        -e AWS_ACCESS_KEY_ID=XXX
        -e AWS_SECRET_ACCESS_KEY=YYY
        -e GRAPH_NAME=yourdatabasename
-       brainframe-me/titan-on-dynamodb"
+       brainframe/titan-on-dynamodb"
 
 <a name="DEPLOYMENT3"/>
 # DETAILS DEPLOYMENT 3
