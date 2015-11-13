@@ -2,6 +2,8 @@
 This repository contains two docker images allowing you to get up and running with TITAN 0.54 - Distributed Graph Database - 
 with DynamoDB as a storage backend in no time with three different deployment methods:
 
+# DEPLOYMENT OPTIONS
+
 1. [Run dockers for Titan and DynamoDB only locally](#DEPLOYMENT1)
 2. [Run docker for Titan locally and use AWS DynamoDB in the cloud](#DEPLOYMENT2)
 3. [Run docker for Titan on AWS EC2 Container Services (ECS) and use AWS DynamoDB in the cloud](#DEPLOYMENT3)
