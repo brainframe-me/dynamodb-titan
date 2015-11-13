@@ -26,8 +26,8 @@ You only need to make sure you do following parts in advance in order for vagran
 
 - Reboot your machine
 
-After having issued "vagrant up", and having waited for some time for the correct dockers to be downloaded and initialized,
-you should be able to access your new local empty Titan graph server:
+After having issued "vagrant up", the two dockers need to be downloaded and initialized (+-2GB), and this will take a while depending on your
+internet connection. Count on 2 - 5 minutes, after which you should be able to access your new local empty Titan graph server:
 
 - (via browser) http://localhost:8182/graphs
 
