@@ -45,11 +45,11 @@ Use virtual-environments by preference not to mess up your running configuration
 
 # CONNECTING TO VAGRANT VIA SSH
 
-After doing a "vagrant up" you should have a fully working ubuntu instance up and running, which has the docker environment installed
+After doing a "vagrant up" you should have a fully working ubuntu instance up and running, which has the docker environment installed.
 In case you want to modify and or build your own docker for internal usage based on this code, you will need to log into this vagrant host via for example putty.
 To do this you need to do the following:
 
-- Download putty and puttygen (http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+- Download putty.exe and puttygen.exe (http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 
 - After "vagrant up" command your root project will contain a folder ".vargrant/machines/default/virtualbox/"
 
@@ -116,7 +116,7 @@ Before you try this, make sure you tried out the [all in one](#ALLINONE) which d
 
 ### 3.1 dynamodb-local
 
-- (in vagrant vm via ssh) "docker run -t --name dynamodb-local -p 8000:8000 brainframe-me/dynamodb-local"
+- (in vagrant vm via ssh) "docker run -ti --entrypoint /bin/bash --name dynamodb-local -p 8000:8000 brainframe-me/dynamodb-local"
 
 ### 3.2 titan-on-dynamodb
 
@@ -143,7 +143,7 @@ AWS_SECRET_ACCESS_KEY in the scripts below. In the docker command we replaced th
 
 ### 2.1 dynamodb-local
 
-- Non needed, since we will use AWS DynamoDB to connect to from titan-on-dynamodb
+- Not needed, since we will use AWS DynamoDB to connect to from titan-on-dynamodb
 
 ### 2.2 titan-on-dynamodb
 
@@ -186,8 +186,8 @@ AWS_SECRET_ACCESS_KEY in the scripts below. In the docker command we replaced th
 
 ## 2. CREATE DOCKER TASKS
 - via the AWS console, click on "EC2 Container Service", and follow the tutorial to create your default cluster. 
-This will automatically start an EC2 instance with docker services preinstalled which will be acting as our local "vagrant" 
-instance from the previous two deployments. This EC2 instance will be running our 2 Dockers.
+This will automatically start an EC2 instance with the docker services pre-installed which will take a similar role as our local "vagrant"
+during the local deployments. This EC2 instance will be running our 2 Dockers.
  
 - Ensure the security group of your EC2 instance has the right security rules to access the ports from the dockers.
 (TCP: 8000, 8182, 8183, 8184)
