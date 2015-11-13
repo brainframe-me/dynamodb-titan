@@ -16,12 +16,20 @@ sudo mkdir /local
 sudo rsync -avu --filter=':- /vagrant/.gitignore' /vagrant/ /local/
 sudo chown -R vagrant:vagrant /local
 
+# Download docker for dynamodb-local
+echo "Downloading brainframe/dynamodb-local..."
+docker pull brainframe/dynamodb-local
+
+# Download docker for titan-on-dynamodb
+echo "Downloading and starting brainframe/titan-on-dynamodb..."
+docker pull brainframe/titan-on-dynamodb
+
 # Start docker for dynamodb-local
-echo "downloading and starting brainframe/dynamodb-local..."
+echo "Starting brainframe/dynamodb-local..."
 docker run -d --name dynamodb-local -p 8000:8000 brainframe/dynamodb-local
 
 # Start docker for titan-on-dynamodb
-echo "downloading and starting brainframe/titan-on-dynamodb..."
+echo "Starting brainframe/titan-on-dynamodb..."
 docker run -d --name titan-on-dynamodb --link dynamodb-local:dynamodb-local -p 8182:8182 -p 8183:8183 -p 8184:8184 -e DYNAMODB_HOSTPORT=http://dynamodb-local:8000 -e AWS_ACCESS_KEY_ID=notcheckedlocallybutmustbeprovided -e AWS_SECRET_ACCESS_KEY=notcheckedlocallybutmustbeprovided -e GRAPH_NAME=yourdatabasename brainframe/titan-on-dynamodb &
 
 # Background message

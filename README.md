@@ -49,25 +49,11 @@ After doing a "vagrant up" you should have a fully working ubuntu instance up an
 In case you want to modify and or build your own docker for internal usage based on this code, you will need to log into this vagrant host via for example putty.
 To do this you need to do the following:
 
-- Download putty.exe and puttygen.exe (http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+- Download putty.exe (http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 
-- After "vagrant up" command your root project will contain a folder ".vargrant/machines/default/virtualbox/"
+- 1 minute after "vagrant up" you should be able to connect to your virtual machine
 
-- In this folder you'll find the private_key that allows you to log into your vagrant instance
-
-- use puttygen.exe to convert this private_key to a putty compatible private_key:
-
-> - Once started click "load"
-
-> - Navigate to the folder ".vargrant/machines/default/virtualbox/"
-
-> - Select "All files" to show private_key
- 
-> - Select the private_key and click open
-
-> - Now click "save private key" (and click yes) to save the new private key as private.ppk
-
-- Now connect with ssh by using putty.exe with the following configuration:
+- Start putty.exe with the following configuration:
 
 > - hostname: 127.0.0.1, port: 2222
 
