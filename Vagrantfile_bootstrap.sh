@@ -34,10 +34,5 @@ docker run -d --name titan-on-dynamodb --link dynamodb-local:dynamodb-local -p 8
 
 # Background message
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-echo "If this is the first time you do vagrant up, the dockers that need to be downloaded in the background will take a while (+-2GB)."
-echo "They will only start after the download of the images is completed, so count on 2-5 minutes before testing."
-echo "Once the images are in vagrant, a new 'vagrant provision' will go quickly and immediately start the dockers"
-echo ""
-echo "Try in your browser: http://localhost:8182/graphs"
+echo "The two docker images should now be loaded, try the following url in your browser: http://localhost:8182/graphs"
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
