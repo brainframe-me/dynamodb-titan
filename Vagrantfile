@@ -75,7 +75,7 @@ Vagrant.configure(2) do |config|
   config.vm.network "forwarded_port", guest: 8184, host: 8184
 
   config.vm.provider :virtualbox do |vb|
-    vb.memory = 2048
+    vb.memory = 1024
     vb.cpus = 2
     vb.customize ["modifyvm", :id, "--nictype1", "virtio"]
   end
