@@ -218,6 +218,13 @@ during the local deployments. This EC2 instance will be running our 2 Dockers.
 
 - By going into the DynamoDB console, under tables, you should be seeing multiple new tables starting with newdb_ after +- 1 minute
 
+# PORTS
+
+- 8182: HTTP port for REST API
+
+- 8183: RexPro for native access (Binary protocol)
+
+- 8184: JMX Port
 
 # Credits
 The code is based on two existing projects:
