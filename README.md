@@ -57,8 +57,6 @@ To do this you need to do the following:
 
 > - hostname: 127.0.0.1, port: 2222
 
-> - in the left three navigate to "Connection/SSH/Auth" and click "Browse" to select the previously created "private.ppk" file
-
 > - now click "open" which should log you into your local vagrant (username= vagrant)
  
 <a name="DEPLOYMENT1"/>
