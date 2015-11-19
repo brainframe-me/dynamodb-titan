@@ -224,6 +224,15 @@ during the local deployments. This EC2 instance will be running our 2 Dockers.
 
 - 8184: JMX Port
 
+# ATTENTION!
+The default dockers will create the necessary dynamodb tables to provision a fairly heavy load graph DB. Especially the
+edgestore and graphindex are provisioned with high throughput, (bot 100 read and 400 write). 
+Either modifying these values at the bottom of the rexter-dynamodb.xml.template file, and rebuild the dockers.
+An even easier solution is to have the backend create the tables with the high values, but simply  
+modify the read & write throughput for both tables via the console on the dynamodb tables according to your needs. 
+
+If you do not do this, you'll end up with a high aws bill (reserved throughput for dynamodb tables costs even when not used) 
+
 # Credits
 The code is based on two existing projects:
 
