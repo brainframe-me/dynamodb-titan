@@ -9,7 +9,9 @@ with DynamoDB as a storage backend in no time with three different deployment me
 3. [Run docker for Titan on AWS EC2 Container Services (ECS) and use AWS DynamoDB in the cloud](#DEPLOYMENT3)
 
 # GETTING STARTED
+
 <a name="ALLINONE"/>
+
 ## 1. ALL IN ONE
 
 Read this part only if you want to try local deployments 1 or 2. 
@@ -60,8 +62,10 @@ To do this you need to do the following:
 > - now click "open" which should log you into your local vagrant (username & password = 'vagrant')
  
 <a name="DEPLOYMENT1"/>
+
 # DETAILS DEPLOYMENT 1 
 Runs dockers for Titan and DynamoDB only locally.
+
 Before you try this, make sure you tried out the [all in one](#ALLINONE) which does all for you via vagrant as explained above.
 
 ## 1. BUILD your own docker
@@ -112,6 +116,7 @@ Before you try this, make sure you tried out the [all in one](#ALLINONE) which d
        brainframe/titan-on-dynamodb"
 
 <a name="DEPLOYMENT2"/>
+
 # DETAILS DEPLOYMENT 2
 Runs docker for Titan locally and uses AWS DynamoDB in the cloud.
 
@@ -158,6 +163,7 @@ AWS_SECRET_ACCESS_KEY in the scripts below. In the docker command we replaced th
        brainframe/titan-on-dynamodb"
 
 <a name="DEPLOYMENT3"/>
+
 # DETAILS DEPLOYMENT 3
 Runs docker for Titan on AWS EC2 Container Services (ECS) and uses AWS DynamoDB in the cloud
 
