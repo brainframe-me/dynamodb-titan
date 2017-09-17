@@ -10,7 +10,9 @@ with DynamoDB as a storage backend in no time with three different deployment me
 
 # GETTING STARTED
 
-## 1. ALL IN ONE <a name="ALLINONE"/>
+<a name="ALLINONE"/>
+
+## 1. ALL IN ONE
 
 Read this part only if you want to try local deployments 1 or 2. 
 I recommend getting started with the included vagrant configuration which automatically installs the docker environment as a virtual machine.
